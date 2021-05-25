@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=trainingExamScssContent.css.map */
+body {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+main {
+  text-align: justify;
+}
+
+main section {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=trainingExamScssContent.css.map */

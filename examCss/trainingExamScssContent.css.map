@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACF,WAAW,EAAE,8FAA8F;CAC5G;;AACD,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,OAAO;CAIpB;;AALD,AAEE,IAFE,CAEF,OAAO,CAAA;EACL,eAAe,EAAE,MAAM;CACxB",
     "sources": [
         "trainingExamScssContent.scss"
     ],

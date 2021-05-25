@@ -10,48 +10,112 @@
   <title>Les loups & nous</title>
 </head>
 <body>
-  <header>
-    <img src="examImageBank/logoLoup.jpg" alt="logo Les loups & nous">
-    <h1>Les Loups & Nous</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Articles</a></li>
-        <li><a href="#">Evenements</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">A propos</a></li>
-        <li><a href="#">Espace Membre</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <aside>
-      <h2>Articles</h2>
-    </aside>
-    <section>
-      <article>
-        <h3>Le Loup bouc</h4>
-        <p>
-          Le loup est une espèce menacée en Europe (moins de 10 000 individus). Aussi, Canis lupus est strictement protégé par la Directive Habitat et la Convention de Berne.
-          Signataire de ces protocoles européens, la France s ‘est donc engagée à assurer sa protection intégrale. Mais sur le terrain, le braconnage et les tirs officiels accordés à titre dérogatoire par l’État mettent les populations en péril (815 « tirs de défense » , 88 « tirs de défense renforcés»,  8 « tirs de prélèvement » et 27 « tirs de prélèvement renforcés»  autorisés entre le 1er juillet 2015 et le 1er juillet 2016) . Certains éleveurs n’hésitent pas à accabler le loup de tous les torts pour demander son élimination.
-          S’il lui arrive de prélever quelques moutons sur les troupeaux, il est inacceptable de lui mettre sur le dos l’entière responsabilité des problème de la filière ovine (baisse des prix de la viande, concurrence étrangère, maladies…), d’autant que seuls 0,05 % des pertes de bêtes lui sont attribuées et que des mesures de protection efficaces et subventionnées par l’État sont proposées aux éleveurs.
-        </p>
-      </article>
-      <article>
-        <h3>Environement et habitat</h4>
-        <p>
-          Canis lupus est une espèce de canidés comprenant plusieurs sous-espèces sauvages, domestiques ou férales, toutes parfaitement interfécondes, comme le Loup gris commun1 (Canis lupus lupus), le Loup arctique1 (Canis lupus arctos), le Chien (Canis lupus familiaris), le Dingo (Canis lupus dingo) ou encore le Chien chanteur (Canis lupus hallstromi). Si les formes sauvages sont d'origine holarctique, la domestication et le marronnage ont permis à l'espèce de coloniser l'ensemble des écozones terrestres.
-        </p>
-      </article>
-    </section>
-    <section>
-      <!--Contenu multimédia-->
-      <p>Vidéo et images</p>
-    </section>
+  <div class="headerContainer container">
+    <header class="row">
+      <img src="examImageBank/logoLoupCircle.jpg" alt="logo Les loups & nous" class="logoLoup col-3 rounded-circle float start">
+      <h1 class="col">Les Loups & Nous</h1>
+        <a href="#" class="col-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+          </svg>
+        </a>
+    </header>
+  </div>
+  <main class="container">
+    <div class="mainRow row">
+      <nav class="col-1 d-none d-lg-block col-lg-2">
+        <h2>Articles</h2>
+        <ul>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Evenements</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">A propos</a></li>
+        </ul>
+      </nav>
+      <div class="sections col-md-9">
+        <section class="row">
+          <article class="card col-12 col-lg-3 my-3 mx-1 p-0">
+            <img src="examImageBank/article1.jpg" alt="image article du loup bouc">
+            <div class="card-body">
+              <h3 class="card-title">Le Loup bouc</h4>
+              <p>
+                Le loup est une espèce menacée en Europe (moins de 10 000 individus). Aussi, Canis lupus est strictement protégé par la Directive Habitat et la Convention de Berne.
+                Signataire de ces protocoles européens, la France s ‘est donc engagée à assurer sa protection intégrale. Mais sur le terrain, le braconnage et les tirs officiels accordés à titre dérogatoire par l’État mettent les populations en péril (815 « tirs de défense » , 88 « tirs de défense renforcés»,  8 « tirs de prélèvement » et 27 « tirs de prélèvement renforcés»  autorisés entre le 1er juillet 2015 et le 1er juillet 2016) . Certains éleveurs n’hésitent pas à accabler le loup de tous les torts pour demander son élimination.
+                S’il lui arrive de prélever quelques moutons sur les troupeaux, il est inacceptable de lui mettre sur le dos l’entière responsabilité des problème de la filière ovine (baisse des prix de la viande, concurrence étrangère, maladies…), d’autant que seuls 0,05 % des pertes de bêtes lui sont attribuées et que des mesures de protection efficaces et subventionnées par l’État sont proposées aux éleveurs.
+              </p>
+              <button type="button" class="btn btn-success">Voir plus</button>
+            </div>
+          </article>
+          <article class="card col-12 col-lg-3 my-3 mx-1 p-0">
+            <img src="examImageBank/article2.jpg" alt="image environnement et forêt">
+            <div class="card-body">
+              <h3 class="card-title">Environement et habitat</h4>
+              <p>
+                Canis lupus est une espèce de canidés comprenant plusieurs sous-espèces sauvages, domestiques ou férales, toutes parfaitement interfécondes, comme le Loup gris commun1 (Canis lupus lupus), le Loup arctique1 (Canis lupus arctos), le Chien (Canis lupus familiaris), le Dingo (Canis lupus dingo) ou encore le Chien chanteur (Canis lupus hallstromi). Si les formes sauvages sont d'origine holarctique, la domestication et le marronnage ont permis à l'espèce de coloniser l'ensemble des écozones terrestres.
+              </p>
+              <button type="button" class="btn btn-success">Voir plus</button>
+            </div>
+          </article>
+          <article class="card col-12 col-lg-3 my-3 mx-1 p-0">
+            <img src="examImageBank/article3.jpg" alt="image choc animaux en danger">
+            <div class="card-body">
+              <h3 class="card-title">Nos actions de protection</h4>
+              <p>
+                En Europe, le loup est protégé par la Convention de Berne (1979) transcrite dans le droit français en 1989. Il est inscrit dans les annexes II et IV de la directive « Habitats » de l’Union Européenne et fait partie des espèces prioritaires. En France, l’espèce est protégée sur le territoire national par l’arrêté ministériel du 22 juillet 1993 publié à la suite des premières observations attestées du loup en France (mis à jour le 23 avril 2007). Ce statut implique pour les Etats, donc pour la France, de veiller à la conservation de l’espèce et de ses habitats.
+              </p>
+              <button type="button" class="btn btn-success">Voir plus</button>
+            </div>
+          </article>
+        </section>
+        <section class="carousel col-12">
+          <!--Contenu multimédia-->
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="examImageBank/carroussel1.jpg" class="d-block w-100" alt="image forêt de nuit">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Découvrez la vie nocturne du loup</h5>
+                  <p>La vie nocturne du loup son équilibre et son importance</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="examImageBank/carroussel2.jpg" class="d-block w-100" alt="image loup">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nouvelle habitude : le loup solitaire</h5>
+                  <p>Danger des ces tendances du loup solitaire</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="examImageBank/carroussel3.jpg" class="d-block w-100" alt="image environnement et forêt">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Les 10 environnements naturels du loup</h5>
+                  <p>Top 10 des lieux préféres de nos amis</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
     <footer>
       <h4>Mentions légales et tous droits réservés</h4>
       <!--logo réseaux sociaux-->
     </footer>
-  </main>
   <script src="examBootstrap/js/bootstrap.min.js"></script>
 </body>
 
