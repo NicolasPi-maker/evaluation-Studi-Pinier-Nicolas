@@ -4,10 +4,22 @@ body{
   height: 100%;
 }
 
+.espaceMembre{
+  text-align: end;
+}
+
 main {
   text-align: justify;
 }
 
 .card{
   box-shadow:5px 5px 5px lightgray;
+  & img:hover{
+  opacity: 0.8;
+  transition: opacity 1s;
+  }
+}
+
+footer{
+  font-style: italic;
 }
