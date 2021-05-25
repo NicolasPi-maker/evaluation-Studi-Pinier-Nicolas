@@ -9,8 +9,7 @@ main {
 }
 
 main section {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: auto;
+  margin: auto;
 }
 /*# sourceMappingURL=trainingExamScssContent.css.map */
