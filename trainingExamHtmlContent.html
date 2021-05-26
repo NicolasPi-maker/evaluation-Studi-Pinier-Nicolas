@@ -1,173 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="examBootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="examCss/trainingExamScssContent.css">
-  <meta type="description" content="Association dédiée à la protection des loups et de leur habitat depuis 20 ans">
-  <title>Les loups & nous</title>
-</head>
-
-<div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="signIn" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3>Déjà un compte ?</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
-        </button>
-      </div>
-      <div class="modal-body">
-        <form method="POST" action="signIn.php">
-          <div class="form-group align-items-center">
-            <label for="email">E-mail</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-            <label for="password">Mot de passe</label>
-            <input type="password" class="form-control" id="password" name="password" required>
-          <div class="modal-footer">
-            <a href="creatAccount" target="_blank" title="Nouveau compte">
-              <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-plus-circle text-success" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-              </svg>
-            </a>
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Connection</button>
-          </div>
-          </div>
-        </form>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="examBootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="examCss/trainingExamScssContent.css">
+    <meta type="description" content="Association dédiée à la protection des loups et de leur habitat depuis 20 ans">
+    <title>Les loups & nous</title>
+  </head>
+  <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="signIn" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Déjà un compte ?</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="signIn.php">
+            <div class="form-group align-items-center">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+              <label for="password">Mot de passe</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            <div class="modal-footer">
+              <a href="creatAccount" target="_blank" title="Nouveau compte">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-plus-circle text-success" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                </svg>
+              </a>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Connection</button>
+            </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<body class="container">
-  <header class="row align-items-center">
-    <img src="examImageBank/logoLoupCircle.jpg" alt="logo Les loups & nous" class="logoLoup col-2 col-md-1 rounded-circle">
-    <h1 class="col-9 p-0">Les Loups & Nous</h1>
-    <a href="#" class="espaceMembre col-1 m-0 p-0" data-bs-toggle="modal" data-bs-target="#signIn" data-bs-dismiss="modal">
-      <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" fill="currentColor" class="bi bi-person-square text-success" viewBox="0 0 16 16">
-        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
-      </svg>
-    </a>
-      <nav class="col navbar navbar-expand navbar-dark bg-dark mt-1">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="news" class="nav-link">Nouvelles</a>
-          </li>
-          <li class="nav-item">
-            <a href="events" class="nav-link">Evenements</a>
-          </li>
-          <li class="nav-item">
-            <a href="userMove" class="nav-link">Je participes</a>
-          </li>
-          <li class="nav-item">
-            <a href="actions" class="nav-link">Nos actions</a>
-          </li>
-          <li class="nav-item">
-            <a href="donation" class="nav-link">Dons</a>
-          </li>
-        </ul>
-      </nav>
-  </header>
-  <main>
-    <section class="row justify-content-center">
-
-      <article class="card col-12 col-lg p-0 m-3">
-        <a href="aerticle1" target="_blank"><img src="examImageBank/article1.jpg" alt="image article du loup bouc" class="card-img-top rounded"></a>
-          <div class="card-body">
-            <h3 class="card-title">Prochain Evenements</h3>
-            <p>
-              Nous organisons une grande rencontre, suivi d'une visite guidée du parc naturel de grenoble habritant plusieurs espèces des nos amis les loups. N'hésitez pas à vous connecter à votre espace et vous inscrire il y a 100 places disponibles !
-            </p>
-          </div>
-          <div class="p-3 no-gutters text-end">
-            <button type="button" class="btn btn-success">Voir plus</button>
-          </div>
-        </article>
+  <body class="container">
+    <header class="row align-items-center">
+      <img src="examImageBank/logoLoupCircle.jpg" alt="logo Les loups & nous" class="logoLoup col-2 col-md-1 rounded-circle">
+      <h1 class="col-9 p-0">Les Loups & Nous</h1>
+      <a href="#" class="espaceMembre col-1 m-0 p-0" data-bs-toggle="modal" data-bs-target="#signIn" data-bs-dismiss="modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" fill="currentColor" class="bi bi-person-square text-success" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+        </svg>
+      </a>
+        <nav class="col navbar navbar-expand navbar-dark bg-dark mt-1">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="news" class="nav-link">Nouvelles</a>
+            </li>
+            <li class="nav-item">
+              <a href="events" class="nav-link">Evenements</a>
+            </li>
+            <li class="nav-item">
+              <a href="userMove" class="nav-link">Je participes</a>
+            </li>
+            <li class="nav-item">
+              <a href="actions" class="nav-link">Nos actions</a>
+            </li>
+            <li class="nav-item">
+              <a href="donation" class="nav-link">Dons</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="row justify-content-center">
 
         <article class="card col-12 col-lg p-0 m-3">
-          <a href="aerticle2" target="_blank"><img src="examImageBank/article2.jpg" alt="image environnement et forêt" class="card-img-top rounded"></a>
-          <div class="card-body">
-            <h3 class="card-title">Environement et habitat</h3>
-            <p>
-              Canis lupus est une espèce de canidés comprenant plusieurs sous-espèces sauvages, domestiques ou férales, toutes parfaitement interfécondes, comme le Loup gris commun1 (Canis lupus lupus), le Loup arctique1 (Canis lupus arctos), le Chien (Canis lupus familiaris), le Dingo (Canis lupus dingo) ou encore le Chien chanteur (Canis lupus hallstromi). Si les formes sauvages sont d'origine holarctique, la domestication et le marronnage ont permis à l'espèce de coloniser l'ensemble des écozones terrestres.
-            </p>
-          </div>
-          <div class="p-3 no-gutters text-end">
-            <button type="button" class="btn btn-success">Voir plus</button>
-          </div>
-        </article>
+          <a href="aerticle1" target="_blank"><img src="examImageBank/article1.jpg" alt="image article du loup bouc" class="card-img-top rounded"></a>
+            <div class="card-body">
+              <h3 class="card-title">Prochain Evenements</h3>
+              <p>
+                Nous organisons une grande rencontre, suivi d'une visite guidée du parc naturel de grenoble habritant plusieurs espèces des nos amis les loups. N'hésitez pas à vous connecter à votre espace et vous inscrire il y a 100 places disponibles !
+              </p>
+            </div>
+            <div class="p-3 no-gutters text-end">
+              <button type="button" class="btn btn-success">Voir plus</button>
+            </div>
+          </article>
 
-        <article class="card col-12 col-lg p-0 m-3">
-          <a href="aerticle3" target="_blank"><img src="examImageBank/article3.jpg" alt="image choc animaux en danger" class="card-img-top rounded"></a>
-          <div class="card-body">
-            <h3 class="card-title">Nos actions de protection</h3>
-            <p>
-              En Europe, le loup est protégé par la Convention de Berne (1979) transcrite dans le droit français en 1989. Il est inscrit dans les annexes II et IV de la directive « Habitats » de l’Union Européenne et fait partie des espèces prioritaires. En France, l’espèce est protégée sur le territoire national par l’arrêté ministériel du 22 juillet 1993 publié à la suite des premières observations attestées du loup en France (mis à jour le 23 avril 2007). Ce statut implique pour les Etats, donc pour la France, de veiller à la conservation de l’espèce et de ses habitats.
-            </p>
-          </div>
-          <div class="p-3 no-gutters text-end">
-            <button type="button" class="btn btn-success">Voir plus</button>
-          </div>
-        </article>
+          <article class="card col-12 col-lg p-0 m-3">
+            <a href="aerticle2" target="_blank"><img src="examImageBank/article2.jpg" alt="image environnement et forêt" class="card-img-top rounded"></a>
+            <div class="card-body">
+              <h3 class="card-title">Environement et habitat</h3>
+              <p>
+                Canis lupus est une espèce de canidés comprenant plusieurs sous-espèces sauvages, domestiques ou férales, toutes parfaitement interfécondes, comme le Loup gris commun1 (Canis lupus lupus), le Loup arctique1 (Canis lupus arctos), le Chien (Canis lupus familiaris), le Dingo (Canis lupus dingo) ou encore le Chien chanteur (Canis lupus hallstromi). Si les formes sauvages sont d'origine holarctique, la domestication et le marronnage ont permis à l'espèce de coloniser l'ensemble des écozones terrestres.
+              </p>
+            </div>
+            <div class="p-3 no-gutters text-end">
+              <button type="button" class="btn btn-success">Voir plus</button>
+            </div>
+          </article>
 
-      </section>
-      <aside class="row align-items-center col m-0">
-      <div id="carouselExampleCaptions" class="carousel slide col" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="article1" target="_blank"><img src="examImageBank/carroussel1.jpg" class="d-block w-100" alt="image forêt de nuit"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Découvrez la vie nocturne du loup</h5>
-                <p>La vie nocturne du loup son équilibre et son importance</p>
+          <article class="card col-12 col-lg p-0 m-3">
+            <a href="aerticle3" target="_blank"><img src="examImageBank/article3.jpg" alt="image choc animaux en danger" class="card-img-top rounded"></a>
+            <div class="card-body">
+              <h3 class="card-title">Nos actions de protection</h3>
+              <p>
+                En Europe, le loup est protégé par la Convention de Berne (1979) transcrite dans le droit français en 1989. Il est inscrit dans les annexes II et IV de la directive « Habitats » de l’Union Européenne et fait partie des espèces prioritaires. En France, l’espèce est protégée sur le territoire national par l’arrêté ministériel du 22 juillet 1993 publié à la suite des premières observations attestées du loup en France (mis à jour le 23 avril 2007). Ce statut implique pour les Etats, donc pour la France, de veiller à la conservation de l’espèce et de ses habitats.
+              </p>
+            </div>
+            <div class="p-3 no-gutters text-end">
+              <button type="button" class="btn btn-success">Voir plus</button>
+            </div>
+          </article>
+
+        </section>
+        <aside class="row align-items-center col m-0">
+        <div id="carouselExampleCaptions" class="carousel slide col" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="article1" target="_blank"><img src="examImageBank/carroussel1.jpg" class="d-block w-100" alt="image forêt de nuit"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Découvrez la vie nocturne du loup</h5>
+                  <p>La vie nocturne du loup son équilibre et son importance</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="article2" target="_blank"><img src="examImageBank/carroussel2.jpg" class="d-block w-100" alt="image loup"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nouvelle habitude : le loup solitaire</h5>
+                  <p>Danger des ces tendances du loup solitaire</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="article3" target="_blank"><img src="examImageBank/carroussel3.jpg" class="d-block w-100" alt="image environnement et forêt"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Les 10 environnements naturels du loup</h5>
+                  <p>Top 10 des lieux préféres de nos amis</p>
               </div>
             </div>
-            <div class="carousel-item">
-              <a href="article2" target="_blank"><img src="examImageBank/carroussel2.jpg" class="d-block w-100" alt="image loup"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Nouvelle habitude : le loup solitaire</h5>
-                <p>Danger des ces tendances du loup solitaire</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <a href="article3" target="_blank"><img src="examImageBank/carroussel3.jpg" class="d-block w-100" alt="image environnement et forêt"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Les 10 environnements naturels du loup</h5>
-                <p>Top 10 des lieux préféres de nos amis</p>
-            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </aside>
+    </main>
+    <footer class="container">
+      <div class="row text-center align-items-center my-3">
+        <p class="col-12 text-dark font-italic mt-1">Mentions légales et tous droits réservés ©</p>
+      <div class="reseauxSociaux col-12 m-0">
+        <a href="https://www.facebook.com/" target="_blank" title="Notre page Facebook" class="col-4"><img src="examImageBank/iconFacebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank" title="Notre page Instagram" class="col-4"><img src="examImageBank/iconInstagram.png" alt="Instagram"></a>
+        <a href="https://www.twitter.com/" target="_blank" title="Notre page twitter" class="col-4"><img src="examImageBank/iconTwitter.png" alt="Twitter"></a>
+        <a href="mail to: lesloupsetnous@gmail.com" target="_blank" title="Contactez nous"><img src="examImageBank/iconMail.png" alt="Mail"></a>
       </div>
-    </aside>
-  </main>
-  <footer class="container">
-    <div class="row text-center align-items-center my-3">
-      <p class="col-12 text-dark font-italic mt-1">Mentions légales et tous droits réservés ©</p>
-    <div class="reseauxSociaux col-12 m-0">
-      <a href="https://www.facebook.com/" target="_blank" title="Notre page Facebook" class="col-4"><img src="examImageBank/iconFacebook.png" alt="Facebook"></a>
-      <a href="https://www.instagram.com/" target="_blank" title="Notre page Instagram" class="col-4"><img src="examImageBank/iconInstagram.png" alt="Instagram"></a>
-      <a href="https://www.twitter.com/" target="_blank" title="Notre page twitter" class="col-4"><img src="examImageBank/iconTwitter.png" alt="Twitter"></a>
-      <a href="mail to: lesloupsetnous@gmail.com" target="_blank" title="Contactez nous"><img src="examImageBank/iconMail.png" alt="Mail"></a>
-    </div>
-    </div>
-  </footer>
-  <script src="examBootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="examBootstrap/js/bootstrap.min.js"></script>
-</body>
-
+      </div>
+    </footer>
+    <script src="examBootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="examBootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
