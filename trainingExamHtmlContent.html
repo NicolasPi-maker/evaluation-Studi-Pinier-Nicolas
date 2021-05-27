@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="examBootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="examCss/trainingExamScssContent.css">
-    <meta type="description" content="Association dédiée à la protection des loups et de leur habitat depuis 20 ans">
+    <meta name="description" content="Association dédiée à la protection des loups et de leur habitat depuis 20 ans">
     <title>Les loups & nous</title>
   </head>
-  <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="signIn" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3>Déjà membre ?</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
-          </button>
-        </div>
-        <div class="modal-body">
-          <form method="POST" action="signIn.php">
-            <div class="form-group align-items-center">
-              <label for="email">E-mail</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-              <label for="password">Mot de passe</label>
-              <input type="password" class="form-control" id="password" name="password" required>
-            <div class="modal-footer">
-              <a href="creatAccount" target="_blank" title="Nouveau compte">
-                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-plus-circle text-success" viewBox="0 0 16 16">
-                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                </svg>
-              </a>
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Connection</button>
-            </div>
-            </div>
-          </form>
+  <body class="container">
+    <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="signIn" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Déjà membre ?</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="POST" action="signIn.php">
+              <div class="form-group align-items-center">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="password">Mot de passe</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+              <div class="modal-footer">
+                <a href="creatAccount" target="_blank" title="Nouveau compte">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-plus-circle text-success" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg>
+                </a>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Connection</button>
+              </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <body class="container">
     <header class="row align-items-center">
       <img src="examImageBank/logoLoupCircle.jpg" alt="logo Les loups & nous" class="logoLoup col-2 col-md-1 rounded-circle d-none d-md-block">
       <h1 class="col-9 p-0 d-none d-md-block">Les Loups & Nous</h1>
@@ -80,7 +80,7 @@
               </p>
             </div>
             <div class="p-3 no-gutters text-end">
-              <button type="button" class="btn btn-success"><a href="./trainingExamHtmlEventContent.html">Voir plus</a></button>
+              <a href="./trainingExamHtmlEventContent.html" class="btn btn-success">Voir plus</a>
             </div>
           </article>
 
@@ -159,7 +159,7 @@
         <a href="https://www.facebook.com/" target="_blank" title="Notre page Facebook" class="col-4"><img src="examImageBank/iconFacebook.png" alt="Facebook"></a>
         <a href="https://www.instagram.com/" target="_blank" title="Notre page Instagram" class="col-4"><img src="examImageBank/iconInstagram.png" alt="Instagram"></a>
         <a href="https://www.twitter.com/" target="_blank" title="Notre page twitter" class="col-4"><img src="examImageBank/iconTwitter.png" alt="Twitter"></a>
-        <a href="mail to: lesloupsetnous@gmail.com" target="_blank" title="Contactez nous"><img src="examImageBank/iconMail.png" alt="Mail"></a>
+        <a href="mailto:lesloupsetnous@gmail.com" target="_blank" title="Contactez nous"><img src="examImageBank/iconMail.png" alt="Mail"></a>
       </div>
       </div>
     </footer>
