@@ -9,7 +9,37 @@
     <meta type="description" content="Nos derniers evenements concernant notre association, inscrivez-vous facilement et rapidement">
     <title>Les Loups & Nous - Evenements</title>
   </head>
-
+  <div class="modal fade" id="inscription" tabindex="-1" aria-labelledby="signIn" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Inscription</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="eventsignIn.php">
+            <div class="form-group align-items-center">
+              <label for="lastName">Nom</label>
+              <input type="text" class="form-control" id="lastName" name="lastName">
+              <label for="firstName">Prénom</label>
+            </div>
+            <div class="form-group align-items-center">
+              <input type="text" class="form-control" id="firstName" name="firstName">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+              <label for="phoneNumber">N° Téléphone</label>
+              <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="modal-footer text-end">
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">S'inscrire</button>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <body class="container">
     <header class="row align-items-center">
       <img src="examImageBank/logoLoupCircle.jpg" alt="logo Les loups & nous" class="logoLoup col-2 col-md-1 col-lg-1 rounded-circle d-none d-md-block">
@@ -94,7 +124,7 @@
               </aside>
             </div>
             <div class="card-footer no-gutters text-end"> 
-              <button type="button" class="btn btn-success">S'inscrire</button>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#inscription" data-bs-dismiss="modal">S'inscrire</button>
             </div>
         </article>
         <section class="col-12 col-lg">
