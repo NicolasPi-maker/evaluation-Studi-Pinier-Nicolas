@@ -1,4 +1,4 @@
-//Set font-family basics//
+/*Set font-family basics*/
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,7 +7,7 @@ main {
   text-align: justify;
 }
 
-//Cards style//
+/*Cards style*/
 .card{
   box-shadow:5px 5px 5px lightgray;
   & img:hover{
@@ -16,13 +16,15 @@ main {
   }
 }
 
-//Footer style - border//
+/*Footer style - border*/
 footer{
   font-style: italic;
     border-top:1px solid black;
     border-bottom:1px solid black;
     margin: 1em auto 1em auto;
 }
+
+/*Link style*/
 a{
   text-decoration: none;
   color: white;
