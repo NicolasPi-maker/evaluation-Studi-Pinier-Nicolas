@@ -1,0 +1,45 @@
+/*Set font-family basics*/
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Cards style*/
+.card{
+  box-shadow:5px 5px 5px lightgray;
+  & img:hover{
+  opacity: 0.8;
+  transition: opacity 1s;
+  }
+}
+
+/*List link style*/
+ol{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  a{
+    color: black;
+    text-decoration: none;
+    &:hover{
+      color: gray;
+    }
+  }
+}
+ul{
+  list-style: none;
+}
+
+/* secondary title style -border*/
+h2{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+/*Footer style - border*/
+footer{
+  font-style: italic;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    margin: 1em auto 1em auto;
+}
